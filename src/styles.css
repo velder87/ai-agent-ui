@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-thumb { background: #1d2733; border-radius: 8px; }
+*::-webkit-scrollbar-track { background: transparent; }
+
+
+.markdown p { @apply leading-7 text-ink; }
+.markdown h2 { @apply text-xl font-semibold mt-4 mb-2; }
+.markdown h3 { @apply text-lg font-semibold mt-3 mb-1; }
+.markdown code { @apply bg-card px-1.5 py-1 rounded text-sm; }
+.markdown pre { @apply bg-card p-4 rounded-xl overflow-auto shadow-soft; }
+.markdown table { @apply w-full text-sm border-separate border-spacing-y-1; }
+.markdown th, .markdown td { @apply text-left px-3 py-2 bg-card/60 rounded-lg; }
